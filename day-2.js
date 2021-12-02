@@ -1,7 +1,6 @@
 /*
 
 Instructions
-Click here to learn how to navigate the code editor
 
 Registering new astronauts was handled manually in previous missions but it's taking too much time. Knowing that the astronaut information is already listed in a data set, you propose to optimize that job with programming.
 

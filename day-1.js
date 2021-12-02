@@ -1,5 +1,4 @@
 /* Instructions
-Click here to learn how to navigate the code editor
 
 Our latest testing indicates a malfunctioning component in our communications apparatus. For some reason, messages from mission control are not being correctly displayed on board the shuttle. While the message is being displayed on the shuttle’s terminal, the sender’s name is not displayed beside it.
 
