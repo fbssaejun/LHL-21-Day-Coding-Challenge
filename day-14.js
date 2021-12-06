@@ -35,6 +35,8 @@ Output:
 
 */
 
+/*=======================================================1st solution====================================================================*/
+
 const switchAllTogglesOn = (toggleList) => {
   //Loop through input array
   for (let toggle of toggleList) {
@@ -46,3 +48,13 @@ const switchAllTogglesOn = (toggleList) => {
   //Return the changed array
   return toggleList;
 };
+
+/*=======================================================2nd solution====================================================================*/
+
+const switchAllTogglesOn = (toggleList) => {
+  //Return mapped original input array where isOn property has been updated to true, if it has been set to the value of false 
+  return toggleList.map(toggle => {
+  	if(!toggle.isOn) toggle.isOn = true 
+    return toggle
+  })
+}
