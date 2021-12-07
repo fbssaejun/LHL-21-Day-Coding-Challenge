@@ -27,9 +27,20 @@ Output:
 const timeRemaining = (launchDate, missionName, fakeToday) => {
   const today = fakeToday || new Date() // Do not alter this line!
   
-  //Get the difference between two dates
+  //Get the difference between two dates by parsing dates
   const diffDate = Math.ceil((Math.abs(Date.parse(fakeToday) - Date.parse(launchDate)))/(1000 * 60 * 60 * 24))
 
   //Return an object with two key/value pairs 
   return {missionName, daysRemaining: Math.abs(diffDate)}
+}
+
+/*=======================================================2nd solution====================================================================*/
+
+const timeRemaining = (launchDate, missionName, fakeToday) => {
+  const today = fakeToday || new Date() // Do not alter this line!
+  
+  //Get the difference between two dates by calling getDate function 
+  const diffDate = new Date(launchDate).getDate() - new Date(today).getDate()
+
+  return {missionName, daysRemaining: diffDate}
 }
