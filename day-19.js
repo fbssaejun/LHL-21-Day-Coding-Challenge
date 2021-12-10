@@ -26,6 +26,9 @@ Output:
 
 */
 
+
+/*=======================================================1st solution====================================================================*/
+
 const organizeData = (receivedData) => {
   //Intialize empty object to store key value pairs from input array
   let obj = {};
@@ -42,3 +45,18 @@ const organizeData = (receivedData) => {
 
   return obj;
 };
+
+
+/*================================================Refactored solution====================================================================*/
+
+const organizeData = (receivedData) => {
+
+  let obj = {};
+  
+  for(let data of receivedData) {
+    !obj[data.type] ? obj[data.type] = [data.data] : obj[data.type].push(data.data)
+    
+  }
+  return obj
+  
+}
