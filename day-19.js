@@ -27,12 +27,15 @@ Output:
 */
 
 const organizeData = (receivedData) => {
+  //Intialize empty object to store key value pairs from input array
   let obj = {};
 
   for (let data of receivedData) {
+    //Check if current key exists in obj object, if not, add value as a first value in an empty array
     if (!obj[data.type]) {
       obj[data.type] = [data.data];
     } else {
+      //If it does exist, push the second value to the value array
       obj[data.type].push(data.data);
     }
   }
