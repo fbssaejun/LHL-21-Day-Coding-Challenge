@@ -29,6 +29,7 @@ Output:
 */
 
 const addAstronautToRoster = (roster, astronaut) => {
+  //Add astronaut object to roster array
   roster.push(astronaut);
   return roster;
 };
