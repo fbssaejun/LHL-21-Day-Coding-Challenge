@@ -30,8 +30,10 @@ Output:
 const storeWeatherConditions = (temperature, condition, windSpeed, windDirection) => {
   //Create an empty object to store different key/value pairs from input and after calculations
   let obj = {};
+  //convert the temperature from Fahrenheit to Celsius
   obj['temperature'] = Math.round((temperature - 32 ) / 1.8)
   obj['condition'] = condition
+  //convert the wind speed from miles/hour to meters/second
   obj['windSpeed'] = Math.floor(windSpeed * 0.45 ) 
   obj['windDirection'] = windDirection
   
