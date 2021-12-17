@@ -5,6 +5,6 @@
   </p>
 
 
-My own solutions for each 21 coding problems from LLighthouse Lab's 21-Day coding challenge
+My own solutions for each 21 coding problems from Lighthouse Lab's 21-Day coding challenge
 
 
